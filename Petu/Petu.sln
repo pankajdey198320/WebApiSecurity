@@ -3,8 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Katana", "Katana", "{EFC6FD37-E670-4DEB-9F02-BD77DCBF1420}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security Pipeline", "Security Pipeline", "{86D3E033-3AE7-41F0-A810-A84DDDF10ECB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Owin", "Owin", "{0EFBB175-3F82-4989-B57C-69C284EFD41C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hosting", "Katana\Owin\Hosting\Hosting.csproj", "{A8FFB5E4-B1AF-4C45-977D-B3AEA6387837}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8FFB5E4-B1AF-4C45-977D-B3AEA6387837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8FFB5E4-B1AF-4C45-977D-B3AEA6387837}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8FFB5E4-B1AF-4C45-977D-B3AEA6387837}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8FFB5E4-B1AF-4C45-977D-B3AEA6387837}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0EFBB175-3F82-4989-B57C-69C284EFD41C} = {EFC6FD37-E670-4DEB-9F02-BD77DCBF1420}
+		{A8FFB5E4-B1AF-4C45-977D-B3AEA6387837} = {0EFBB175-3F82-4989-B57C-69C284EFD41C}
 	EndGlobalSection
 EndGlobal
